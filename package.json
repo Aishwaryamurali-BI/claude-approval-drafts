@@ -1,0 +1,46 @@
+{
+  "name": "claude-approval-drafts",
+  "version": "0.1.0",
+  "description": "Approval-gated AI drafts with Claude: the model drafts, a human approves, only then is anything saved.",
+  "license": "MIT",
+  "author": "Aishwarya Murali",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "example": "tsx examples/support-reply.ts"
+  },
+  "keywords": [
+    "claude",
+    "anthropic",
+    "human-in-the-loop",
+    "llm",
+    "approval",
+    "drafts"
+  ],
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.131.0",
+    "zod": "^4.6.5"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.4",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2",
+    "vitest": "^5.0.3"
+  }
+}
