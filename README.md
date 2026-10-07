@@ -48,7 +48,7 @@ sequenceDiagram
 ## Install and use
 
 ```bash
-npm install github:<your-account>/claude-approval-drafts @anthropic-ai/sdk zod
+npm install github:Aishwaryamurali-BI/claude-approval-drafts @anthropic-ai/sdk zod
 ```
 
 ```ts
